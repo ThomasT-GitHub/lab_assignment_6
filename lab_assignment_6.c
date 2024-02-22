@@ -9,7 +9,7 @@ int search(int numbers[], int low, int high, int value)
   }
   
   // Defines the middle of the array
-  int mid = (low + high) / 2;
+  int mid = low + ((high - low) / 2);
 
   // If the middle is the value, return the index
   if (numbers[mid] == value) {
